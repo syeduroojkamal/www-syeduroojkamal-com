@@ -1,0 +1,9 @@
+nav {
+  display: flex;
+  justify-content: right;
+  color: var(--accentColor);
+  background-color: #2a2a2a;
+  & h1 {
+    margin-right: 10rem;
+  }
+}

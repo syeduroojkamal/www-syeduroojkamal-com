@@ -1,0 +1,13 @@
+:root {
+  --textColor: #ffffff;
+  --backgroundColor: #232323;
+  --accentColor: #8d4ee0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--backgroundColor);
+  color: var(--textColor);
+}

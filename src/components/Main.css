@@ -1,0 +1,49 @@
+main {
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7rem;
+
+  .summary {
+    width: 27rem;
+    margin: 1rem;
+    & h1 {
+      color: var(--accentColor);
+    }
+  }
+
+  .skillsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50rem;
+    .downloadResume {
+      border: none;
+      background-color: transparent;
+      color: var(--accentColor);
+      font-size: x-large;
+      padding: 1rem;
+      border-radius: 1rem;
+      transition: all 200ms ease-in-out;
+
+      &:hover {
+        background-color: var(--accentColor);
+        color: var(--textColor);
+      }
+    }
+    .skills {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & span {
+        margin: 0.5rem;
+        justify-content: space-between;
+      }
+    }
+  }
+}
