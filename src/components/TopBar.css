@@ -9,7 +9,13 @@ nav {
     margin: 1rem;
   }
 
-  & button:last-child {
-    margin-right: 4rem;
+  @media (orientation: landscape) {
+    & button:last-child {
+      margin-right: 4rem;
+    }
+  }
+
+  @media screen and (orientation: portrait) {
+    justify-content: center;
   }
 }

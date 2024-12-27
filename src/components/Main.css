@@ -5,7 +5,11 @@ main {
   align-items: center;
   flex-wrap: wrap;
   gap: 7rem;
-
+  @media (orientation: portrait) {
+    margin-top: 2rem;
+    text-align: center;
+    gap: 1rem;
+  }
   .summary {
     width: 27rem;
     margin: 1rem;
