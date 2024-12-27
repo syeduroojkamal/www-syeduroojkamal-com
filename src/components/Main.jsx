@@ -4,7 +4,7 @@ export default function Main() {
   return (
     <main>
       <div className="summary">
-        <h1 className="glow">Syed Urooj Kamal</h1>
+        <h1>Syed Urooj Kamal</h1>
         <h2>Web Developer</h2>
         <p>
           I am an IT professional with over one year of experience. I specialize

@@ -1,10 +1,13 @@
 import "./TopBar.css";
+import Resume from "../assets/resume.pdf";
 
 export default function TopBar() {
   return (
     <nav>
-      <button className="button">Download Resume</button>
-      <button className="button">Contact Me</button>
+      <a href={Resume} target="_blank" className="button">
+        Download Resume
+      </a>
+      <a className="button">Contact Me</a>
     </nav>
   );
 }

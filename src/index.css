@@ -13,6 +13,8 @@
     border: solid;
     border-radius: 1rem;
     transition: all 200ms ease-in-out;
+    text-decoration: none;
+    user-select: none;
 
     &:hover {
       background-color: var(--accentColor);

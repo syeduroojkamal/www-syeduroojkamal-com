@@ -5,17 +5,17 @@ nav {
   color: var(--accentColor);
   background-color: #2a2a2a;
 
-  & button {
+  & a {
     margin: 1rem;
   }
 
   @media (orientation: landscape) {
-    & button:last-child {
+    & a:last-child {
       margin-right: 4rem;
     }
   }
 
-  @media screen and (orientation: portrait) {
+  @media (orientation: portrait) {
     justify-content: center;
   }
 }

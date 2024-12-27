@@ -14,8 +14,18 @@ main {
     width: 27rem;
     margin: 1rem;
     & h1 {
+      font-size: xxx-large;
       display: inline;
       color: var(--accentColor);
+      @media (orientation: portrait) {
+        font-size: 2.5rem;
+      }
+    }
+    & h2 {
+      font-size: xx-large;
+    }
+    & p {
+      font-size: large;
     }
   }
 
@@ -40,9 +50,4 @@ main {
       }
     }
   }
-}
-
-.glow {
-  background-color: var(--accentTransparentColor);
-  box-shadow: inset 0px 0px 10px 10px var(--backgroundColor);
 }
