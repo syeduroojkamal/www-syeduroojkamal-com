@@ -10,30 +10,19 @@ main {
     width: 27rem;
     margin: 1rem;
     & h1 {
+      display: inline;
       color: var(--accentColor);
     }
   }
 
   .skillsContainer {
+    margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 50rem;
-    .downloadResume {
-      border: none;
-      background-color: transparent;
-      color: var(--accentColor);
-      font-size: x-large;
-      padding: 1rem;
-      border-radius: 1rem;
-      transition: all 200ms ease-in-out;
 
-      &:hover {
-        background-color: var(--accentColor);
-        color: var(--textColor);
-      }
-    }
     .skills {
       display: flex;
       gap: 1rem;
@@ -43,7 +32,13 @@ main {
       & span {
         margin: 0.5rem;
         justify-content: space-between;
+        padding: 1rem;
       }
     }
   }
+}
+
+.glow {
+  background-color: var(--accentTransparentColor);
+  box-shadow: inset 0px 0px 10px 10px var(--backgroundColor);
 }

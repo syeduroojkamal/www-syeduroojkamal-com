@@ -3,7 +3,8 @@ import "./TopBar.css";
 export default function TopBar() {
   return (
     <nav>
-      <h1>Contact Me</h1>
+      <button className="button">Download Resume</button>
+      <button className="button">Contact Me</button>
     </nav>
   );
 }

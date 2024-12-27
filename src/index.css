@@ -2,6 +2,27 @@
   --textColor: #ffffff;
   --backgroundColor: #232323;
   --accentColor: #8d4ee0;
+  --accentTransparentColor: #8d4ee030;
+
+  .button {
+    border: none;
+    background-color: transparent;
+    color: var(--accentColor);
+    font-size: large;
+    padding: 1rem;
+    border: solid;
+    border-radius: 1rem;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      background-color: var(--accentColor);
+      color: var(--textColor);
+    }
+  }
+}
+
+* {
+  font-family: "Inter", serif;
 }
 
 body {

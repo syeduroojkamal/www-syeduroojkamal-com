@@ -4,7 +4,7 @@ export default function Main() {
   return (
     <main>
       <div className="summary">
-        <h1>Syed Urooj Kamal</h1>
+        <h1 className="glow">Syed Urooj Kamal</h1>
         <h2>Web Developer</h2>
         <p>
           I am an IT professional with over one year of experience. I specialize
@@ -15,7 +15,6 @@ export default function Main() {
         </p>
       </div>
       <div className="skillsContainer">
-        <button className="downloadResume">Download Resume</button>
         <h1>Skills</h1>
         <div className="skills">
           <span>MERN Stack</span>
