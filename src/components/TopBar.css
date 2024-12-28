@@ -4,9 +4,10 @@ nav {
   align-items: center;
   color: var(--accentColor);
   background-color: #2a2a2a;
-
+  flex-wrap: wrap;
+  gap: 1rem;
   & a {
-    margin: 1rem;
+    margin: 1rem 0rem;
   }
 
   @media (orientation: landscape) {

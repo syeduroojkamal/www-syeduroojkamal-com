@@ -4,11 +4,10 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 7rem;
+  gap: 1rem 7rem;
   @media (orientation: portrait) {
     margin-top: 2rem;
     text-align: center;
-    gap: 1rem;
   }
   .summary {
     width: 27rem;
@@ -35,7 +34,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50rem;
+    width: 26rem;
 
     .skills {
       display: flex;
