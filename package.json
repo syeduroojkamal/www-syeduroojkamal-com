@@ -1,28 +1,25 @@
 {
   "name": "www-syeduroojkamal-com",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "npx @tailwindcss/cli -i ./input.css -o ./src/styles.css --watch"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syeduroojkamal/www-syeduroojkamal-com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syeduroojkamal/www-syeduroojkamal-com/issues"
+  },
+  "homepage": "https://github.com/syeduroojkamal/www-syeduroojkamal-com#readme",
+  "description": "",
   "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@eslint/js": "^9.17.0",
-    "@types/react": "^18.3.18",
-    "@types/react-dom": "^18.3.5",
-    "@vitejs/plugin-react": "^4.3.4",
-    "eslint": "^9.17.0",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-react-refresh": "^0.4.16",
-    "globals": "^15.14.0",
-    "vite": "^6.0.5"
+    "@tailwindcss/cli": "^4.0.3",
+    "prettier": "^3.4.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "tailwindcss": "^4.0.3"
   }
 }
