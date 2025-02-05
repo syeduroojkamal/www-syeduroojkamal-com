@@ -521,60 +521,56 @@
   }
 }
 @layer utilities {
-  .collapse {
-    visibility: collapse;
-  }
-  .relative {
-    position: relative;
-  }
-  .block {
-    display: block;
-  }
   .flex {
     display: flex;
-  }
-  .inline-flex {
-    display: inline-flex;
-  }
-  .list-item {
-    display: list-item;
-  }
-  .table {
-    display: table;
   }
   .h-screen {
     height: 100vh;
   }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .transform {
-    transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
-  }
-  .resize {
-    resize: both;
-  }
   .items-center {
     align-items: center;
   }
-  .justify-center {
-    justify-content: center;
+  .justify-evenly {
+    justify-content: space-evenly;
   }
-  .border {
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
+  }
+  .border-2 {
     border-style: var(--tw-border-style);
-    border-width: 1px;
+    border-width: 2px;
   }
-  .bg-black {
-    background-color: var(--color-black);
+  .bg-slate-900 {
+    background-color: var(--color-slate-900);
+  }
+  .bg-slate-950 {
+    background-color: var(--color-slate-950);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
-  .px-6 {
-    padding-inline: calc(var(--spacing) * 6);
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
   }
-  .py-2 {
-    padding-block: calc(var(--spacing) * 2);
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-7 {
+    padding-block: calc(var(--spacing) * 7);
+  }
+  .text-center {
+    text-align: center;
+  }
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-xl {
+    font-size: var(--text-xl);
+    line-height: var(--tw-leading, var(--text-xl--line-height));
+  }
+  .text-cyan-500 {
+    color: var(--color-cyan-500);
   }
   .text-white {
     color: var(--color-white);
@@ -582,35 +578,32 @@
   .underline {
     text-decoration-line: underline;
   }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
+  .underline-offset-8 {
+    text-underline-offset: 8px;
   }
   .select-none {
     -webkit-user-select: none;
     user-select: none;
   }
-  .active\:border-2 {
-    &:active {
-      border-style: var(--tw-border-style);
-      border-width: 2px;
+  .\*\:mt-2\.5 {
+    :is(& > *) {
+      margin-top: calc(var(--spacing) * 2.5);
     }
   }
-  .active\:border-black {
+  .active\:border-dashed {
     &:active {
-      border-color: var(--color-black);
+      --tw-border-style: dashed;
+      border-style: dashed;
     }
   }
-  .active\:bg-white {
+  .active\:border-white {
     &:active {
-      background-color: var(--color-white);
+      border-color: var(--color-white);
     }
   }
-  .active\:text-black {
-    &:active {
-      color: var(--color-black);
-    }
-  }
+}
+em {
+  color: oklch(0.715 0.143 215.221);
 }
 @keyframes spin {
   to {
@@ -638,37 +631,7 @@
     animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateX(0);
-}
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateY(0);
-}
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
-  initial-value: rotateZ(0);
-}
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewX(0);
-}
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
-  initial-value: skewY(0);
-}
 @property --tw-border-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
-@property --tw-outline-style {
   syntax: "*";
   inherits: false;
   initial-value: solid;
