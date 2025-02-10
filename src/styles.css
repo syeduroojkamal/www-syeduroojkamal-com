@@ -551,11 +551,17 @@
   .h-svh {
     height: 100svh;
   }
+  .w-2xl {
+    width: var(--container-2xl);
+  }
   .w-2xs {
     width: var(--container-2xs);
   }
   .w-full {
     width: 100%;
+  }
+  .w-xl {
+    width: var(--container-xl);
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
