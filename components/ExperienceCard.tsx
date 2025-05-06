@@ -64,7 +64,7 @@ const ExperienceCard = ({
                 <Quote className="h-4 w-4" />
                 Testimonial
               </div>
-              <p className="text-justify">{testimonial}</p>
+              <p className="text-justify mx-4">{testimonial}</p>
               <p className="text-xs font-semibold mt-2">Team Lead, Cognizant</p>
             </div>
           ) : null}

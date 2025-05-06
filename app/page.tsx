@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProfileImage from "@/components/ProfileImage";
+import EducationCard from "@/components/EducationCard";
 
 export default function Home() {
   return (
@@ -105,13 +106,36 @@ export default function Home() {
             />
           </div>
         </section>
-        <section>
+        <section className="py-4 px-4 my-15">
           <h1 className="text-center text-2xl font-semibold mb-5">Education</h1>
-          B.Tech in Computer Science & Engineering Swami Keshvanand Institute of
-          Technology, Jaipur 2016 – 2020 (or your actual years)
+          <div className="flex justify-center items-center">
+            <EducationCard />
+          </div>
         </section>
-        <section className="py-10 px-4 flex flex-col justify-center items-center bg-card border mt-15">
-          About Me (mention GCP cert here briefly) Contact Me
+        <section className="py-10 px-4 bg-card border mt-15 text-sm flex flex-col justify-center items-center">
+          <h1 className="text-2xl font-semibold mb-5 text-center">About me</h1>
+          <div className="sm:w-xl text-justify flex flex-col gap-4 px-5">
+            <div>
+              I am a full-stack web developer focused on building modern,
+              performant applications with Next.js, TypeScript, and React. I
+              work confidently across both frontend and backend, and I enjoy
+              crafting clean, responsive UIs using Tailwind CSS, ShadCN, and
+              other tools from the modern React ecosystem.
+            </div>
+            <div>
+              My background includes professional experience in tech, but over
+              the past few years, I have dedicated myself to deepening my web
+              development skills through hands-on projects and continuous
+              learning. I have built applications that span from UI-rich
+              frontend interfaces to fully integrated backend APIs—always with
+              attention to detail, scalability, and user experience.
+            </div>
+            <div>
+              Now, I’m actively seeking a role where I can contribute to a team
+              building real-world products with Next.js, while continuing to
+              grow as a developer in a modern JavaScript environment.
+            </div>
+          </div>
         </section>
       </main>
     </div>
