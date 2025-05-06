@@ -14,7 +14,7 @@ const ProfileImage = () => {
         width={320}
         height={320}
         unoptimized
-        className={`rounded-full border-sidebar-accent border-8 transition-opacity duration-200 ${
+        className={`rounded-full border-sidebar-accent border-8 transition-opacity duration-400 ${
           imageLoaded ? "opacity-100" : "opacity-0"
         }`}
         onLoad={() => setImageLoaded(true)}
