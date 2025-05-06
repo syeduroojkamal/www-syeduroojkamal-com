@@ -2,10 +2,10 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { siGithub } from "simple-icons/icons";
 import { SimpleIcon } from "@/components/ui/SimpleIcon";
-import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
+import ProfileImage from "@/components/ProfileImage";
 
 export default function Home() {
   return (
@@ -17,15 +17,8 @@ export default function Home() {
         <ThemeToggle />
       </nav>
       <main>
-        <section className="flex flex-col justify-center items-center sm:justify-around sm:flex-row-reverse sm:mt-28 my-15">
-          <Image
-            src="/images/profile.jpeg"
-            alt="photo of Syed Urooj Kamal"
-            width={320}
-            height={320}
-            unoptimized
-            className="rounded-full border-sidebar-accent border-8 mb-6"
-          />
+        <section className="flex flex-col justify-center items-center sm:justify-around sm:flex-row-reverse sm:mt-28 my-15 gap-8">
+          <ProfileImage />
           <div className="text-center  flex flex-col items-center gap-6 sm:text-left  sm:items-start">
             <h1 className="text-4xl font-bold sm:text-6xl">Syed Urooj Kamal</h1>
             <p className="max-w-md mx-5 sm:mx-0">
@@ -85,17 +78,32 @@ export default function Home() {
             />
           </div>
         </section>
-
-        <section>
-          <h1 className="text-center text-2xl font-semibold mb-5">
+        <section className="py-4 px-4 my-15">
+          <h1 className="text-center text-2xl font-semibold mb-10">
             Experience
           </h1>
-          <ExperienceCard />
-
-          <p>Intern</p>
-          <p>Cognizant, Remote</p>
-          <p>Mar 2022 – Jun 2022 (3 months)</p>
-          <p>Trained in Programming, SQL, and Performance Testing</p>
+          <div className="flex flex-wrap justify-center items-baseline gap-5">
+            <ExperienceCard
+              role="Programmer Analyst"
+              company="Cognizant, Pune"
+              location="Pune, India"
+              duration="Aug 2022 – Nov 2023"
+              details={[
+                "Worked with a USA-based offshore team in an Agile setup",
+                "Automated server and test data setup, saving 5+ hours collectively daily for the team",
+                "Handled test data and servers; built and ran performance tests using JMeter and LoadRunner",
+                "Analyzed test results and generated detailed reports",
+              ]}
+              testimonial={`"Urooj's automation work saved us hours of manual effort. His ability to spot optimization opportunities significantly improved our systems."`}
+            />
+            <ExperienceCard
+              role="Intern"
+              company="Cognizant, Pune"
+              location="Remote"
+              duration="Mar 2022 - Jun 2022"
+              details={["Trained in Programming, SQL, and Performance Testing"]}
+            />
+          </div>
         </section>
         <section>
           <h1 className="text-center text-2xl font-semibold mb-5">Education</h1>

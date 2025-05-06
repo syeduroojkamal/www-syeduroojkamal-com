@@ -25,7 +25,7 @@ export function ProjectCard({
   liveUrl,
 }: ProjectCardProps) {
   return (
-    <Card className="overflow-hidden flex flex-col h-full max-w-md">
+    <Card className="overflow-hidden flex flex-col h-full w-sm">
       <div className="relative h-48 w-full">
         <Image
           src={imageUrl}
