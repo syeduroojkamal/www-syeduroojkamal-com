@@ -24,7 +24,7 @@ export default function Home() {
             width={320}
             height={320}
             unoptimized
-            className="rounded-full border-sidebar-accent border-8"
+            className="rounded-full border-sidebar-accent border-8 mb-6"
           />
           <div className="text-center  flex flex-col items-center gap-6 sm:text-left  sm:items-start">
             <h1 className="text-4xl font-bold sm:text-6xl">Syed Urooj Kamal</h1>
