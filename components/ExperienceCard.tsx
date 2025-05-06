@@ -41,9 +41,9 @@ const ExperienceCard = () => {
             Testimonial
           </div>
           <p>
-            "Urooj's automation work saved us hours of manual effort. His
-            ability to spot optimization opportunities significantly improved
-            our systems."
+            &quot;Urooj&apos;s automation work saved us hours of manual effort.
+            His ability to spot optimization opportunities significantly
+            improved our systems.&quot;
           </p>
           <p className="text-xs font-semibold mt-2">Team Lead, Cognizant</p>
         </div>
