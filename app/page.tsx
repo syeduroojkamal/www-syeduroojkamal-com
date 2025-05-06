@@ -2,9 +2,10 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { Button } from "@/components/ui/button";
 import { siGithub } from "simple-icons/icons";
 import { SimpleIcon } from "@/components/ui/SimpleIcon";
-import { CircleUserRound } from "lucide-react";
+import Image from "next/image";
 import { Badge } from "@/components/ui/badge";
 import { ProjectCard } from "@/components/ProjectCard";
+import ExperienceCard from "@/components/ExperienceCard";
 
 export default function Home() {
   return (
@@ -15,9 +16,16 @@ export default function Home() {
         </Button>
         <ThemeToggle />
       </nav>
-      <main className="*:my-15">
-        <section className="flex flex-col justify-center items-center sm:justify-around  sm:flex-row-reverse sm:mt-28">
-          <CircleUserRound className="size-80" />
+      <main>
+        <section className="flex flex-col justify-center items-center sm:justify-around sm:flex-row-reverse sm:mt-28 my-15">
+          <Image
+            src="/images/profile.jpeg"
+            alt="photo of Syed Urooj Kamal"
+            width={320}
+            height={320}
+            unoptimized
+            className="rounded-full border-sidebar-accent border-8"
+          />
           <div className="text-center  flex flex-col items-center gap-6 sm:text-left  sm:items-start">
             <h1 className="text-4xl font-bold sm:text-6xl">Syed Urooj Kamal</h1>
             <p className="max-w-md mx-5 sm:mx-0">
@@ -27,8 +35,7 @@ export default function Home() {
             <Button variant={"default"}>Download Resume</Button>
           </div>
         </section>
-
-        <section className="py-10 px-4 flex flex-col justify-center items-center bg-card border shadow-sm">
+        <section className="py-10 px-4 flex flex-col justify-center items-center bg-card border my-15">
           <h1 className="text-center text-2xl font-semibold mb-2">Skills</h1>
           <div>
             <div className="mb-2">
@@ -57,8 +64,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        <section className="py-4 px-4">
+        <section className="py-4 px-4 my-15">
           <h1 className="text-center text-2xl font-semibold mb-10">Projects</h1>
           <div className="flex gap-5 flex-wrap justify-center">
             <ProjectCard
@@ -81,8 +87,23 @@ export default function Home() {
         </section>
 
         <section>
-          Experience About Me (mention GCP cert here briefly) Education Contact
-          Me
+          <h1 className="text-center text-2xl font-semibold mb-5">
+            Experience
+          </h1>
+          <ExperienceCard />
+
+          <p>Intern</p>
+          <p>Cognizant, Remote</p>
+          <p>Mar 2022 – Jun 2022 (3 months)</p>
+          <p>Trained in Programming, SQL, and Performance Testing</p>
+        </section>
+        <section>
+          <h1 className="text-center text-2xl font-semibold mb-5">Education</h1>
+          B.Tech in Computer Science & Engineering Swami Keshvanand Institute of
+          Technology, Jaipur 2016 – 2020 (or your actual years)
+        </section>
+        <section className="py-10 px-4 flex flex-col justify-center items-center bg-card border mt-15">
+          About Me (mention GCP cert here briefly) Contact Me
         </section>
       </main>
     </div>
