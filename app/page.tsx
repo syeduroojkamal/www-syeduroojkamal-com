@@ -7,32 +7,33 @@ import { ProjectCard } from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProfileImage from "@/components/ProfileImage";
 import EducationCard from "@/components/EducationCard";
+import ResumeButton from "@/components/ResumeButton";
 
 export default function Home() {
   return (
-    <div>
-      <nav className="flex justify-end gap-1 my-2 pr-2">
+    <>
+      <nav className="mt-4 mb-24 flex justify-end items-center gap-1">
         <Button variant={"ghost"} size={"icon"}>
           <SimpleIcon icon={siGithub} />
         </Button>
         <ThemeToggle />
       </nav>
-      <main>
-        <section className="flex flex-col justify-center items-center sm:justify-around sm:flex-row-reverse sm:mt-28 my-15 gap-8">
+      <main className="space-y-24">
+        <section className="flex flex-col justify-center items-center gap-8 sm:justify-around sm:flex-row-reverse">
           <ProfileImage />
-          <div className="text-center  flex flex-col items-center gap-6 sm:text-left  sm:items-start">
+          <div className="flex flex-col items-center gap-6 text-center sm:text-left sm:items-start">
             <h1 className="text-4xl font-bold sm:text-6xl">Syed Urooj Kamal</h1>
-            <p className="max-w-md mx-5 sm:mx-0">
+            <p className="w-sm">
               Web developer building fast, responsive, and user-friendly apps
               with React and Next.js.
             </p>
-            <Button variant={"default"}>Download Resume</Button>
+            <ResumeButton />
           </div>
         </section>
-        <section className="py-10 px-4 flex flex-col justify-center items-center bg-card border my-15">
-          <h1 className="text-center text-2xl font-semibold mb-2">Skills</h1>
-          <div>
-            <div className="mb-2">
+        <section className="mx-[-1.25rem] py-8 flex flex-col justify-center items-center max-[-600]:] bg-card border">
+          <h1 className="text-center mb-5 text-2xl font-semibold">Skills</h1>
+          <div className="mx-5">
+            <div>
               <div className="text-lg font-semibold">Core Tech Stack:</div>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="outline">Next.js</Badge>
@@ -42,7 +43,7 @@ export default function Home() {
                 <Badge variant="outline">TypeScript</Badge>
               </div>
             </div>
-            <div className="max-w-4xl">
+            <div>
               <div className="text-lg font-semibold">Other Skills: </div>
               <div className="flex flex-wrap gap-2">
                 <Badge variant="outline">Google Cloud Platform</Badge>
@@ -58,9 +59,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="py-4 px-4 my-15">
-          <h1 className="text-center text-2xl font-semibold mb-10">Projects</h1>
-          <div className="flex gap-5 flex-wrap justify-center">
+        <section>
+          <h1 className="text-center mb-5 text-2xl font-semibold">Projects</h1>
+          <div className="flex flex-wrap justify-center gap-5">
             <ProjectCard
               title="Portfolio Website"
               description="Hosted statically on Cloudflare"
@@ -79,8 +80,8 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="py-4 px-4 my-15">
-          <h1 className="text-center text-2xl font-semibold mb-10">
+        <section>
+          <h1 className="text-center mb-5 text-2xl font-semibold">
             Experience
           </h1>
           <div className="flex flex-wrap justify-center items-baseline gap-5">
@@ -106,14 +107,14 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="py-4 px-4 my-15">
-          <h1 className="text-center text-2xl font-semibold mb-5">Education</h1>
+        <section>
+          <h1 className="text-center mb-5 text-2xl font-semibold">Education</h1>
           <div className="flex justify-center items-center">
             <EducationCard />
           </div>
         </section>
-        <section className="py-10 px-4 bg-card border mt-15 text-sm flex flex-col justify-center items-center">
-          <h1 className="text-2xl font-semibold mb-5 text-center">About me</h1>
+        <section className="mx-[-1.25rem] py-10 px-5 bg-card border text-sm flex flex-col justify-center items-center">
+          <h1 className="text-2xl mb-5 font-semibold text-center">About me</h1>
           <div className="sm:w-xl text-justify flex flex-col gap-4 px-5">
             <div>
               I am a full-stack web developer focused on building modern,
@@ -138,6 +139,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-    </div>
+    </>
   );
 }

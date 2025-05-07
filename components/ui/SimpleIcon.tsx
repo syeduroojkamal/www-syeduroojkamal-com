@@ -7,7 +7,7 @@ type IconProps = {
 export function SimpleIcon({
   icon,
   size = 24,
-  className = "shadow-xs hover:bg-primary/90",
+  className = "hover:bg-primary/90",
 }: IconProps) {
   return (
     <svg

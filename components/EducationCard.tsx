@@ -9,7 +9,7 @@ export default function EducationCard() {
           <p className="text-sm">Computer Science & Engineering</p>
         </CardHeader>
 
-        <CardContent>
+        <CardContent className="border-t pt-4">
           <div>
             <p className="text-sm text-muted-foreground">
               CGPA: <span>7.89</span>
