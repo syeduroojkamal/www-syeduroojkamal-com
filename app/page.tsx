@@ -7,14 +7,19 @@ import { ProjectCard } from "@/components/ProjectCard";
 import ExperienceCard from "@/components/ExperienceCard";
 import ProfileImage from "@/components/ProfileImage";
 import EducationCard from "@/components/EducationCard";
-import ResumeButton from "@/components/ResumeButton";
 
 export default function Home() {
   return (
     <>
       <nav className="mt-4 mb-24 flex justify-end items-center gap-1">
         <Button variant={"ghost"} size={"icon"}>
-          <SimpleIcon icon={siGithub} />
+          <a
+            href="https://github.com/syeduroojkamal/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <SimpleIcon icon={siGithub} />
+          </a>
         </Button>
         <ThemeToggle />
       </nav>
@@ -27,7 +32,15 @@ export default function Home() {
               Web developer building fast, responsive, and user-friendly apps
               with React and Next.js.
             </p>
-            <ResumeButton />
+            <Button variant={"default"}>
+              <a
+                href="https://docs.google.com/document/d/1SDQyduNQt0nIPw_k7GXqU43Hvc9MO2SPDCIV4qmD5Aw/preview?tab=t.0"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Download Resume
+              </a>
+            </Button>
           </div>
         </section>
         <section className="mx-[-1.25rem] py-8 flex flex-col justify-center items-center max-[-600]:] bg-card border">
