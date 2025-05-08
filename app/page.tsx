@@ -11,14 +11,14 @@ import EducationCard from "@/components/EducationCard";
 export default function Home() {
   return (
     <>
-      <nav className="mt-4 mb-24 flex justify-end items-center gap-1">
-        <Button variant={"ghost"} size={"icon"}>
+      <nav className="mt-4 mb-16 flex justify-end items-center gap-3">
+        <Button variant={"ghost"} size={"icon"} className="size-6">
           <a
             href="https://github.com/syeduroojkamal/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <SimpleIcon icon={siGithub} />
+            <SimpleIcon icon={siGithub} className="size-6" />
           </a>
         </Button>
         <ThemeToggle />
