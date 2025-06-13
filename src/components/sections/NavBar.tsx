@@ -4,7 +4,7 @@ import ThemeDropdown from "../theme/ThemeDropdown";
 
 export default function NavBar() {
   return (
-    <nav className="flex justify-end gap-4 mx-4 mt-4">
+    <header className="flex justify-end gap-4 mx-4 mt-4">
       <Button asChild variant={"ghost"}>
         <a
           href="https://github.com/syeduroojkamal/"
@@ -12,10 +12,10 @@ export default function NavBar() {
           rel="noopener noreferrer"
         >
           <Github />
-          <span>Github</span>
+          <h1>Github</h1>
         </a>
       </Button>
       <ThemeDropdown />
-    </nav>
+    </header>
   );
 }
