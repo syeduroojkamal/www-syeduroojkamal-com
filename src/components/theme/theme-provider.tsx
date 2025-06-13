@@ -22,7 +22,7 @@ export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
         "starry-night",
         "t3-chat",
       ]}
-      defaultTheme="twitter"
+      defaultTheme="clean-slate"
       {...props}
     >
       {children}

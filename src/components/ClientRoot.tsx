@@ -23,7 +23,6 @@ export default function ClientRoot({
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="twitter"
       enableSystem={false}
       enableColorScheme={true}
     >
