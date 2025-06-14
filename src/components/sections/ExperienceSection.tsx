@@ -8,17 +8,18 @@ export default function ExperienceSection() {
       <div className="flex flex-wrap items-start justify-center gap-8 mt-8">
         <div className="bg-card p-4 w-80 border rounded-2xl shadow-lg">
           <div className="flex w-full justify-start items-center gap-4">
+            <div>
+              <h2 className="text-lg">Programmer Analyst</h2>
+              <h3 className="italic text-sm">Cognizant</h3>
+            </div>
             <Image
               src="/cognizant.svg"
               alt="photo of Syed Urooj Kamal"
               width={70}
               height={70}
               unoptimized
+              className="ml-auto"
             />
-            <div>
-              <h2 className="text-lg">Programmer Analyst</h2>
-              <h3 className="italic text-sm">Cognizant</h3>
-            </div>
           </div>
           <span className="text-sm flex items-center gap-2 mt-4">
             <Calendar className="scale-90" />
@@ -51,17 +52,18 @@ export default function ExperienceSection() {
         </div>
         <div className="bg-card p-4 w-80 border rounded-2xl shadow-lg">
           <div className="flex w-full justify-start items-center gap-4">
+            <div>
+              <h2 className="text-lg">Intern</h2>
+              <h3 className="italic text-sm">Cognizant</h3>
+            </div>
             <Image
               src="/cognizant.svg"
               alt="photo of Syed Urooj Kamal"
               width={70}
               height={70}
               unoptimized
+              className="ml-auto"
             />
-            <div>
-              <h2 className="text-lg">Intern</h2>
-              <h3 className="italic text-sm">Cognizant</h3>
-            </div>
           </div>
           <span className="text-sm flex items-center gap-2 mt-4">
             <Calendar className="scale-90" />
